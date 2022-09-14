@@ -1,0 +1,100 @@
+@import url( 'https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    z-index: 100;
+    .nav-bar {
+        display: flex;
+
+        a {
+            flex: 1;
+            text-align: center;
+            font-size: 22px;
+            line-height: 55px;
+            color: white;
+            &:hover {
+                filter: brightness(0.8);
+            }
+        }
+        a:nth-child(1) {
+            background-color: rgb(233, 11, 11);
+        }
+        a:nth-child(2) {
+            background-color:rgb(33, 212, 33);
+        }
+        a:nth-child(3) {
+            background-color:purple;
+        }
+        a:nth-child(4) {
+            background-color: rgb(250, 163, 3);
+        }
+        a:nth-child(5) {
+            background-color: blue;
+        }
+    }
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 500%;
+
+    div{
+        display: flex;
+        width: 20%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-size: 7vw;
+        letter-spacing: 10px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+    }
+    div:nth-child(1) {
+        background-color: rgb(233, 11, 11);
+    }
+    div:nth-child(2) {
+        background-color:rgb(33, 212, 33);
+    }
+    div:nth-child(3) {
+        background-color:purple;
+    }
+    div:nth-child(4) {
+        background-color: rgb(250, 163, 3);
+    }
+    div:nth-child(5) {
+        background-color: blue;
+    }
+}
+
+// responsive
+
+@media (max-width:750px) {
+    .header{
+        .nav-bar{
+            a{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
